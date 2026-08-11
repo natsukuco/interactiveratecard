@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO Optimization -->
     <title>Natsuku | Wedding Photography Rate Card 2026-2027</title>
-    <meta name="description" content="Official rate card for Natsuku Wedding Photography by Hakim. Authentic, candid storytelling for weddings and solemnizations in Singapore.">
-    <meta name="keywords" content="Wedding Photography, Singapore Wedding Photographer, Natsuku, Candid Wedding Photos, Photography Rates 2026">
+    <meta name="description" content="Official rate card for Natsuku Wedding Photography by Hakim. Packages from $828. Authentic, candid storytelling for weddings and solemnisations in Singapore.">
+    <meta name="keywords" content="Wedding Photography, Singapore Wedding Photographer, Natsuku, Candid Wedding Photos, Photography Rates 2026, Solemnisation Photographer">
     <meta name="author" content="Natsuku Photography">
-    
+    <meta name="theme-color" content="#4a544c">
+    <link rel="icon" href="Natsuku%20Logo-09.png">
+
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Natsuku | Wedding Photography Rate Card 2026-2027">
-    <meta property="og:description" content="View our 2026-2027 wedding photography packages and timeline. Fondly remembered storytelling.">
+    <meta property="og:description" content="Explore our 2026-2027 packages, build your own estimate, and see the journey from hello to high-res.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://natsuku.co"> <!-- Update if your URL is different -->
+    <meta property="og:url" content="https://natsuku.co">
+    <meta property="og:image" content="Natsuku%20Logo-09.png">
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Structured Data (Schema.org) for Local Business -->
@@ -23,280 +26,749 @@
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "Natsuku Photography",
-      "image": "https://skybite.pic-time.com/client", 
+      "image": "https://skybite.pic-time.com/client",
       "description": "Authentic wedding photography that is fondly remembered.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Singapore"
       },
       "url": "https://skybite.pic-time.com/client",
-      "priceRange": "$$"
+      "priceRange": "$$",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Wedding Photography Packages 2026-2027",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Cherish Package — up to 3 hours", "price": "828", "priceCurrency": "SGD" },
+          { "@type": "Offer", "name": "Devotion Package — up to 6 hours", "price": "1588", "priceCurrency": "SGD" },
+          { "@type": "Offer", "name": "Adore Package — up to 9 hours", "price": "1788", "priceCurrency": "SGD" },
+          { "@type": "Offer", "name": "Beloved Package — up to 12 hours", "price": "2388", "priceCurrency": "SGD" },
+          { "@type": "Offer", "name": "Beloved Package Duo — up to 12 hours, 2 photographers", "price": "3588", "priceCurrency": "SGD" },
+          { "@type": "Offer", "name": "Pre-Wedding Shoot — 1.5 hours, 1 location", "price": "500", "priceCurrency": "SGD" },
+          { "@type": "Offer", "name": "Additional Hour", "price": "250", "priceCurrency": "SGD" }
+        ]
+      }
     }
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sage:  { DEFAULT: '#4a544c', deep: '#39413a', soft: '#6f7c71', mist: '#e4e8e2' },
+              cream: '#f1e8d7',
+              paper: '#f7f4ed',
+              gold:  '#9a8471',
+              ink:   '#2e332f'
+            },
+            fontFamily: {
+              serif: ['"Bodoni Moda"', 'Georgia', 'serif'],
+              sans:  ['Montserrat', 'system-ui', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Montserrat', sans-serif; background-color: #faf9f6; color: #333; }
-        .font-serif { font-family: 'Bodoni+Moda', serif; }
-        .natsuku-gold { color: #9a8471; }
-        .natsuku-bg-gold { background-color: #9a8471; }
-        .tab-active { border-bottom: 2px solid #9a8471; color: #9a8471; }
-        .card-popular { border: 1px solid #9a8471; box-shadow: 0 20px 25px -5px rgba(154, 132, 113, 0.1); }
-        
-        .tab-content { display: none; animation: fadeIn 0.4s ease-in-out; }
-        .tab-content.active { display: block; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        :root {
+            --sage: #4a544c;
+            --sage-soft: #6f7c71;
+            --mist: #e4e8e2;
+            --gold: #9a8471;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Montserrat', system-ui, sans-serif;
+            background-color: #f7f4ed;
+            color: #2e332f;
+        }
+        .font-serif { font-family: 'Bodoni Moda', Georgia, serif; }
 
-        /* Timeline spacing adjustment */
-        .timeline-container { position: relative; padding-left: 3rem; }
-        @media (min-width: 768px) {
-            .timeline-container { padding-left: 0; }
+        /* Paper grain — echoes the speckled texture of the natsuku mark */
+        .grain-overlay {
+            position: fixed; inset: -25%; pointer-events: none; z-index: 70; opacity: .04;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");
+        }
+
+        /* Tabs */
+        .tab-btn { position: relative; color: #8c948d; transition: color .3s ease; }
+        .tab-btn::after {
+            content: ''; position: absolute; left: 50%; bottom: -1px; height: 2px; width: 0;
+            background: var(--sage); transform: translateX(-50%); transition: width .35s cubic-bezier(.16,1,.3,1);
+        }
+        .tab-btn.is-active { color: var(--sage); }
+        .tab-btn.is-active::after { width: 100%; }
+        .tab-panel { display: none; }
+        .tab-panel.is-active { display: block; animation: riseIn .5s cubic-bezier(.16,1,.3,1) both; }
+        @keyframes riseIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+        /* Scroll reveal */
+        .reveal { opacity: 0; transform: translateY(16px); }
+        .reveal.is-in { opacity: 1; transform: none; transition: opacity .8s ease, transform .8s cubic-bezier(.16,1,.3,1); }
+
+        /* Package cards */
+        .pkg-card { transition: transform .45s cubic-bezier(.16,1,.3,1), box-shadow .45s ease, border-color .45s ease; }
+        .pkg-card:hover { transform: translateY(-6px); box-shadow: 0 24px 40px -24px rgba(74,84,76,.35); border-color: #cdd4cd; }
+        .pkg-card.is-featured { border-color: var(--sage); box-shadow: 0 24px 40px -28px rgba(74,84,76,.45); }
+        .pkg-card.is-matched { border-color: var(--sage); box-shadow: 0 0 0 1px var(--sage), 0 24px 40px -24px rgba(74,84,76,.4); }
+        .pkg-body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .45s cubic-bezier(.16,1,.3,1), opacity .3s ease; opacity: 0; }
+        .pkg-body > div { overflow: hidden; }
+        .pkg-card.is-open .pkg-body { grid-template-rows: 1fr; opacity: 1; }
+        .pkg-card.is-open .pkg-toggle-icon { transform: rotate(45deg); }
+        .pkg-toggle-icon { transition: transform .4s cubic-bezier(.16,1,.3,1); }
+
+        /* Range slider */
+        input[type=range].hour-range {
+            -webkit-appearance: none; appearance: none; width: 100%; height: 2px;
+            background: var(--mist); border-radius: 999px; outline: none; cursor: pointer;
+        }
+        input[type=range].hour-range::-webkit-slider-thumb {
+            -webkit-appearance: none; appearance: none; width: 26px; height: 26px; border-radius: 50%;
+            background: var(--sage); border: 4px solid #f7f4ed; cursor: grab;
+            box-shadow: 0 2px 10px rgba(74,84,76,.45); transition: transform .2s ease;
+        }
+        input[type=range].hour-range::-webkit-slider-thumb:active { transform: scale(1.15); cursor: grabbing; }
+        input[type=range].hour-range::-moz-range-thumb {
+            width: 22px; height: 22px; border-radius: 50%; background: var(--sage);
+            border: 4px solid #f7f4ed; box-shadow: 0 2px 10px rgba(74,84,76,.45); cursor: grab;
+        }
+        input[type=range].hour-range:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+        /* Add-on switches */
+        .switch { width: 44px; height: 24px; border-radius: 999px; background: #d7dcd7; transition: background .3s ease; flex: none; }
+        .switch span { display: block; width: 18px; height: 18px; margin: 3px; border-radius: 50%; background: #fff; transition: transform .3s cubic-bezier(.16,1,.3,1); box-shadow: 0 1px 4px rgba(0,0,0,.15); }
+        .addon[aria-pressed="true"] .switch { background: var(--sage); }
+        .addon[aria-pressed="true"] .switch span { transform: translateX(20px); }
+        .addon { transition: border-color .3s ease, background-color .3s ease; }
+        .addon[aria-pressed="true"] { border-color: var(--sage); background-color: rgba(74,84,76,.04); }
+        .addon:disabled { opacity: .45; cursor: not-allowed; }
+
+        /* Comparison table */
+        .cmp-table th, .cmp-table td { border-bottom: 1px solid #eceae3; }
+        .cmp-table tbody tr:hover td, .cmp-table tbody tr:hover th { background: rgba(74,84,76,.035); }
+        .cmp-col-featured { background: rgba(74,84,76,.05); }
+
+        /* Timeline */
+        .timeline-line { background: linear-gradient(to bottom, transparent, var(--mist) 8%, var(--mist) 92%, transparent); }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+            .reveal { opacity: 1; transform: none; }
         }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased selection:bg-sage selection:text-cream">
+
+    <div class="grain-overlay" aria-hidden="true"></div>
 
     <!-- Top Navigation Links -->
-    <nav class="w-full py-3 bg-white border-b border-stone-100 flex justify-center gap-4 md:gap-8 text-[10px] font-bold uppercase tracking-widest z-50 sticky top-0 px-4 text-center">
-        <a href="https://skybite.pic-time.com/client" target="_blank" class="hover:text-[#9a8471] transition-colors border-b border-transparent hover:border-[#9a8471]">Portfolio</a>
-        <a href="https://maps.app.goo.gl/2jhCvsvyrYShcupk6?g_st=ac" target="_blank" class="hover:text-[#9a8471] transition-colors border-b border-transparent hover:border-[#9a8471]">Reviews</a>
-        <a href="https://www.instagram.com/natsuku.co?igsh=M3Y5cXU1Znl2cmY4" target="_blank" class="hover:text-[#9a8471] transition-colors border-b border-transparent hover:border-[#9a8471]">Instagram</a>
+    <nav class="w-full py-3 bg-paper/95 backdrop-blur border-b border-stone-200/70 flex justify-center gap-4 md:gap-8 text-[10px] font-bold uppercase tracking-[0.2em] z-50 sticky top-0 px-4 text-center">
+        <a href="https://skybite.pic-time.com/client" target="_blank" rel="noopener" class="hover:text-sage transition-colors border-b border-transparent hover:border-sage">Portfolio</a>
+        <a href="https://maps.app.goo.gl/2jhCvsvyrYShcupk6?g_st=ac" target="_blank" rel="noopener" class="hover:text-sage transition-colors border-b border-transparent hover:border-sage">Reviews</a>
+        <a href="https://www.instagram.com/natsuku.co?igsh=M3Y5cXU1Znl2cmY4" target="_blank" rel="noopener" class="hover:text-sage transition-colors border-b border-transparent hover:border-sage">Instagram</a>
     </nav>
 
     <!-- Header Section -->
     <header class="pt-12 pb-6 text-center px-4">
-        <h1 class="text-4xl md:text-5xl font-light tracking-[0.4em] uppercase mb-2 font-serif">Natsuku</h1>
-        <p class="italic text-stone-400 font-serif tracking-wide mb-8">懐く — to be fondly remembered</p>
-        
+        <img src="Natsuku%20Logo-09.png" alt="Natsuku Photography" width="96" height="96"
+             class="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 rounded-full">
+        <h1 class="text-4xl md:text-5xl font-light tracking-[0.4em] uppercase mb-3 font-serif">Natsuku</h1>
+        <p class="italic text-sage-soft font-serif tracking-wide mb-2">懐く — to be fondly remembered</p>
+        <p class="text-[10px] font-bold uppercase tracking-[0.35em] text-stone-400 mb-8">Rate Card &middot; 2026 / 2027</p>
+
         <!-- App Tab Navigation -->
-        <div class="flex justify-center border-b border-stone-200 max-w-xs mx-auto mb-8">
-            <button onclick="switchTab('pricing')" id="btn-pricing" class="px-6 py-2 text-xs font-bold uppercase tracking-widest tab-active">Packages</button>
-            <button onclick="switchTab('timeline')" id="btn-timeline" class="px-6 py-2 text-xs font-bold uppercase tracking-widest text-stone-400">Timeline</button>
+        <div class="flex justify-center border-b border-stone-200 max-w-md mx-auto" role="tablist" aria-label="Rate card sections">
+            <button role="tab" aria-selected="true" aria-controls="pricing" id="btn-pricing"
+                    class="tab-btn is-active px-4 sm:px-6 py-3 text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em]">Packages</button>
+            <button role="tab" aria-selected="false" aria-controls="builder" id="btn-builder"
+                    class="tab-btn px-4 sm:px-6 py-3 text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em]">Build Yours</button>
+            <button role="tab" aria-selected="false" aria-controls="timeline" id="btn-timeline"
+                    class="tab-btn px-4 sm:px-6 py-3 text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em]">Timeline</button>
         </div>
     </header>
 
-    <!-- TAB 1: PRICING & PACKAGES -->
-    <div id="pricing" class="tab-content active max-w-6xl mx-auto px-6 pb-20">
-        
+    <!-- ============ TAB 1: PACKAGES ============ -->
+    <main>
+    <section id="pricing" role="tabpanel" aria-labelledby="btn-pricing" class="tab-panel is-active max-w-6xl mx-auto px-6 pt-10 pb-20">
+
         <!-- Inclusions Summary -->
-        <div class="bg-white p-8 rounded-3xl border border-stone-100 shadow-sm mb-16 text-center">
-            <h3 class="text-xs uppercase tracking-[0.3em] text-stone-400 font-bold mb-2">The Natsuku Standard</h3>
-            <p class="text-[11px] italic text-stone-400 mb-8 font-serif">included in all packages</p>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-[10px] font-bold uppercase text-stone-600">
-                <div class="flex flex-col items-center gap-2"><span class="natsuku-gold">●</span> Online Gallery</div>
-                <div class="flex flex-col items-center gap-2"><span class="natsuku-gold">●</span> Itinerary Planning</div>
-                <div class="flex flex-col items-center gap-2"><span class="natsuku-gold">●</span> Unlimited Edits</div>
-                <div class="flex flex-col items-center gap-2"><span class="natsuku-gold">●</span> 2x Magnetic Polaroids</div>
-                <div class="flex flex-col items-center gap-2"><span class="natsuku-gold">●</span> 20x4R Photos + Album</div>
+        <div class="reveal bg-white/80 p-8 md:p-10 rounded-[2rem] border border-stone-200/80 shadow-[0_18px_40px_-32px_rgba(74,84,76,.5)] mb-14 text-center">
+            <h2 class="text-xs uppercase tracking-[0.3em] text-sage font-bold mb-2">The Natsuku Standard</h2>
+            <p class="text-[11px] italic text-stone-400 mb-8 font-serif">included in every package, without exception</p>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-x-4 gap-y-6 text-[10px] font-semibold uppercase tracking-wider text-stone-600">
+                <div class="flex flex-col items-center gap-2"><span class="text-gold text-base leading-none">✦</span> Unlimited Edited Photographs</div>
+                <div class="flex flex-col items-center gap-2"><span class="text-gold text-base leading-none">✦</span> Online Photo Gallery</div>
+                <div class="flex flex-col items-center gap-2"><span class="text-gold text-base leading-none">✦</span> Itinerary Planning</div>
+                <div class="flex flex-col items-center gap-2"><span class="text-gold text-base leading-none">✦</span> 20 &times; 4R Photo Album</div>
+                <div class="flex flex-col items-center gap-2 col-span-2 md:col-span-1"><span class="text-gold text-base leading-none">✦</span> 2 &times; Magnetic Polaroid</div>
+            </div>
+        </div>
+
+        <!-- Hour finder -->
+        <div class="reveal mb-14">
+            <div class="bg-sage text-cream rounded-[2rem] p-8 md:p-10 relative overflow-hidden">
+                <div class="absolute -right-16 -top-16 w-56 h-56 rounded-full border border-cream/15" aria-hidden="true"></div>
+                <div class="absolute -right-6 -bottom-24 w-64 h-64 rounded-full border border-cream/10" aria-hidden="true"></div>
+                <div class="relative z-10 grid md:grid-cols-[1fr_auto] gap-8 md:gap-12 items-end">
+                    <div>
+                        <h3 class="text-[10px] font-bold uppercase tracking-[0.3em] text-cream/60 mb-3">Find your fit</h3>
+                        <label for="finder-hours" class="block font-serif italic text-2xl md:text-3xl mb-8">How long is your day?</label>
+                        <input id="finder-hours" class="hour-range" type="range" min="1" max="12" step="1" value="9"
+                               aria-describedby="finder-result">
+                        <div class="flex justify-between text-[9px] font-bold uppercase tracking-widest text-cream/45 mt-4">
+                            <span>1 hr</span><span>6 hrs</span><span>12 hrs</span>
+                        </div>
+                    </div>
+                    <div id="finder-result" class="md:text-right md:min-w-[13rem]" aria-live="polite">
+                        <div class="text-[10px] font-bold uppercase tracking-[0.25em] text-cream/60 mb-2">
+                            <span id="finder-hours-label">9 hours</span> of coverage
+                        </div>
+                        <div id="finder-name" class="font-serif text-4xl md:text-5xl mb-2">Adore</div>
+                        <div class="text-cream/70 text-sm font-light mb-5">from <span id="finder-price">$1,788</span></div>
+                        <button type="button" data-goto-builder
+                                class="text-[10px] font-bold uppercase tracking-[0.2em] bg-cream text-sage px-5 py-3 rounded-full hover:bg-white transition-colors">
+                            Build this estimate →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View switch -->
+        <div class="reveal flex items-center justify-between gap-4 mb-8">
+            <h2 class="text-xs uppercase tracking-[0.3em] text-stone-400 font-bold">The Packages</h2>
+            <div class="flex items-center gap-1 p-1 bg-white border border-stone-200 rounded-full text-[9px] font-bold uppercase tracking-widest">
+                <button type="button" id="view-cards" aria-pressed="true" class="px-4 py-2 rounded-full bg-sage text-cream transition-colors">Cards</button>
+                <button type="button" id="view-compare" aria-pressed="false" class="px-4 py-2 rounded-full text-stone-400 hover:text-sage transition-colors">Compare</button>
             </div>
         </div>
 
         <!-- Packages Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div id="cards-view" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 items-start">
+
             <!-- Cherish -->
-            <div class="bg-white p-8 rounded-3xl border border-stone-200 flex flex-col">
-                <h3 class="text-2xl font-serif mb-1">Cherish</h3>
-                <p class="text-[9px] uppercase tracking-widest text-stone-400 mb-6">The Essentials</p>
-                <div class="mb-6">
-                    <span class="text-3xl font-light">$828</span>
+            <article data-pkg="cherish" class="pkg-card reveal bg-white p-8 rounded-[2rem] border border-stone-200 flex flex-col">
+                <div class="flex items-baseline justify-between mb-1">
+                    <h3 class="text-2xl font-serif">Cherish</h3>
+                    <span class="text-[9px] font-bold tracking-[0.2em] text-stone-300">01</span>
                 </div>
-                <p class="text-xs text-stone-500 italic mb-8 leading-relaxed">Perfect for small, meaningful events like a concise solemnization.</p>
-                <div class="mt-auto pt-6 border-t border-stone-50 text-[10px] font-bold uppercase text-stone-400">Up to 3 Hours Coverage</div>
-            </div>
+                <p class="text-[9px] uppercase tracking-widest text-stone-400 mb-6">The Essentials</p>
+                <div class="mb-5 flex items-baseline gap-2">
+                    <span class="text-3xl font-light">$828</span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-stone-400">up to 3 hrs</span>
+                </div>
+                <p class="text-xs text-stone-500 italic mb-6 leading-relaxed">Perfect for small, meaningful events like a concise solemnisation.</p>
+                <button type="button" class="pkg-toggle mt-auto flex items-center justify-between w-full pt-5 border-t border-stone-100 text-[10px] font-bold uppercase tracking-widest text-sage" aria-expanded="false">
+                    <span>What's Included</span>
+                    <span class="pkg-toggle-icon text-base leading-none" aria-hidden="true">+</span>
+                </button>
+                <div class="pkg-body"><div>
+                    <ul class="space-y-2 pt-5 text-xs text-stone-600">
+                        <li class="flex gap-3"><span class="text-gold">✦</span> Unlimited edited photographs</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> Online photo gallery</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> Itinerary planning</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> 20 &times; 4R photo album</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> 2 &times; magnetic polaroid</li>
+                    </ul>
+                </div></div>
+            </article>
 
             <!-- Devotion -->
-            <div class="bg-white p-8 rounded-3xl border border-stone-200 flex flex-col">
-                <h3 class="text-2xl font-serif mb-1">Devotion</h3>
-                <p class="text-[9px] uppercase tracking-widest text-stone-400 mb-6">Focused Coverage</p>
-                <div class="mb-6">
-                    <span class="text-3xl font-light">$1,588</span>
+            <article data-pkg="devotion" class="pkg-card reveal bg-white p-8 rounded-[2rem] border border-stone-200 flex flex-col">
+                <div class="flex items-baseline justify-between mb-1">
+                    <h3 class="text-2xl font-serif">Devotion</h3>
+                    <span class="text-[9px] font-bold tracking-[0.2em] text-stone-300">02</span>
                 </div>
-                <p class="text-xs text-stone-500 italic mb-8 leading-relaxed">Ideal for capturing main morning events or lunch receptions.</p>
-                <div class="mt-auto pt-6 border-t border-stone-50 text-[10px] font-bold uppercase text-stone-400">Up to 6 Hours Coverage</div>
-            </div>
+                <p class="text-[9px] uppercase tracking-widest text-stone-400 mb-6">Focused Coverage</p>
+                <div class="mb-5 flex items-baseline gap-2">
+                    <span class="text-3xl font-light">$1,588</span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-stone-400">up to 6 hrs</span>
+                </div>
+                <p class="text-xs text-stone-500 italic mb-6 leading-relaxed">Ideal for capturing main morning events or lunch receptions.</p>
+                <button type="button" class="pkg-toggle mt-auto flex items-center justify-between w-full pt-5 border-t border-stone-100 text-[10px] font-bold uppercase tracking-widest text-sage" aria-expanded="false">
+                    <span>What's Included</span>
+                    <span class="pkg-toggle-icon text-base leading-none" aria-hidden="true">+</span>
+                </button>
+                <div class="pkg-body"><div>
+                    <ul class="space-y-2 pt-5 text-xs text-stone-600">
+                        <li class="flex gap-3"><span class="text-gold">✦</span> Unlimited edited photographs</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> Online photo gallery</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> Itinerary planning</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> 20 &times; 4R photo album</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> 2 &times; magnetic polaroid</li>
+                    </ul>
+                </div></div>
+            </article>
 
             <!-- Adore (Most Popular) -->
-            <div class="bg-white p-8 rounded-3xl card-popular relative flex flex-col scale-105 shadow-xl">
-                <div class="absolute top-0 right-0 bg-[#9a8471] text-white p-2 rounded-bl-2xl">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <article data-pkg="adore" class="pkg-card is-featured reveal bg-white p-8 rounded-[2rem] border relative flex flex-col">
+                <div class="absolute top-0 right-0 bg-sage text-cream px-3 py-2 rounded-bl-2xl rounded-tr-[2rem] flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <span class="text-[8px] font-bold uppercase tracking-widest">Popular</span>
                 </div>
-                <h3 class="text-2xl font-serif mb-1">Adore</h3>
-                <p class="text-[9px] uppercase tracking-widest natsuku-gold font-bold mb-6">Most Popular Choice</p>
-                <div class="mb-6">
+                <div class="flex items-baseline justify-between mb-1">
+                    <h3 class="text-2xl font-serif">Adore</h3>
+                    <span class="text-[9px] font-bold tracking-[0.2em] text-stone-300 mr-24">03</span>
+                </div>
+                <p class="text-[9px] uppercase tracking-widest text-sage font-bold mb-6">Most Requested</p>
+                <div class="mb-5 flex items-baseline gap-2">
                     <span class="text-3xl font-light">$1,788</span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-stone-400">up to 9 hrs</span>
                 </div>
-                <p class="text-xs text-stone-500 italic mb-8 leading-relaxed">Our most requested package for comprehensive day-to-night storytelling.</p>
-                <div class="mt-auto pt-6 border-t border-stone-50 text-[10px] font-bold uppercase natsuku-gold">Up to 9 Hours Coverage</div>
-            </div>
+                <p class="text-xs text-stone-500 italic mb-6 leading-relaxed">Our most requested package for comprehensive day-to-night storytelling.</p>
+                <button type="button" class="pkg-toggle mt-auto flex items-center justify-between w-full pt-5 border-t border-stone-100 text-[10px] font-bold uppercase tracking-widest text-sage" aria-expanded="false">
+                    <span>What's Included</span>
+                    <span class="pkg-toggle-icon text-base leading-none" aria-hidden="true">+</span>
+                </button>
+                <div class="pkg-body"><div>
+                    <ul class="space-y-2 pt-5 text-xs text-stone-600">
+                        <li class="flex gap-3"><span class="text-gold">✦</span> Unlimited edited photographs</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> Online photo gallery</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> Itinerary planning</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> 20 &times; 4R photo album</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> 2 &times; magnetic polaroid</li>
+                    </ul>
+                </div></div>
+            </article>
 
             <!-- Beloved -->
-            <div class="bg-white p-8 rounded-3xl border border-stone-200 flex flex-col">
-                <h3 class="text-2xl font-serif mb-1">Beloved</h3>
+            <article data-pkg="beloved" class="pkg-card reveal bg-white p-8 rounded-[2rem] border border-stone-200 flex flex-col">
+                <div class="flex items-baseline justify-between mb-1">
+                    <h3 class="text-2xl font-serif">Beloved</h3>
+                    <span class="text-[9px] font-bold tracking-[0.2em] text-stone-300">04</span>
+                </div>
                 <p class="text-[9px] uppercase tracking-widest text-stone-400 mb-6">The Complete Story</p>
-                <div class="mb-6">
-                    <span class="text-3xl font-light">$2,488</span>
+                <div class="mb-5 flex items-baseline gap-2">
+                    <span class="text-3xl font-light">$2,388</span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-stone-400">up to 12 hrs</span>
                 </div>
-                <div class="mb-4 flex items-center gap-2">
-                    <span class="px-2 py-1 bg-stone-100 text-[9px] font-bold uppercase rounded text-stone-600">10 Photos Next-Day Edits</span>
+                <div class="mb-5 flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-sage-mist text-[9px] font-bold uppercase rounded text-sage">Splittable over 2 days</span>
+                    <span class="px-2 py-1 bg-sage-mist text-[9px] font-bold uppercase rounded text-sage">Next-day sneak preview</span>
                 </div>
-                <p class="text-xs text-stone-500 italic mb-8 leading-relaxed">Capture every single moment from the crack of dawn to the final toast.</p>
-                <div class="mt-auto pt-6 border-t border-stone-50 text-[10px] font-bold uppercase text-stone-400">Up to 12 Hours Coverage</div>
-            </div>
+                <p class="text-xs text-stone-500 italic mb-6 leading-relaxed">Capture every single moment from the crack of dawn to the final toast.</p>
+                <button type="button" class="pkg-toggle mt-auto flex items-center justify-between w-full pt-5 border-t border-stone-100 text-[10px] font-bold uppercase tracking-widest text-sage" aria-expanded="false">
+                    <span>What's Included</span>
+                    <span class="pkg-toggle-icon text-base leading-none" aria-hidden="true">+</span>
+                </button>
+                <div class="pkg-body"><div>
+                    <ul class="space-y-2 pt-5 text-xs text-stone-600">
+                        <li class="flex gap-3"><span class="text-gold">✦</span> Unlimited edited photographs</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> Online photo gallery</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> Itinerary planning</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> 20 &times; 4R photo album</li>
+                        <li class="flex gap-3"><span class="text-gold">✦</span> 2 &times; magnetic polaroid</li>
+                        <li class="flex gap-3 font-semibold text-sage"><span>✦</span> 20 &times; Instax album</li>
+                        <li class="flex gap-3 font-semibold text-sage"><span>✦</span> Can be split into 2 days</li>
+                        <li class="flex gap-3 font-semibold text-sage"><span>✦</span> 10 &times; next-day sneak preview</li>
+                    </ul>
+                </div></div>
+            </article>
 
-            <!-- Legacy -->
-            <div class="bg-white p-8 rounded-3xl border border-stone-200 flex flex-col md:col-span-2 lg:col-span-1 lg:scale-100">
-                <h3 class="text-2xl font-serif mb-1">Legacy</h3>
-                <p class="text-[9px] uppercase tracking-widest text-stone-400 mb-6">The Ultimate Collection</p>
-                <div class="mb-6">
-                    <span class="text-3xl font-light">$3,888</span>
+            <!-- Beloved Duo -->
+            <article data-pkg="duo" class="pkg-card reveal bg-sage-deep text-cream p-8 rounded-[2rem] border border-sage-deep flex flex-col md:col-span-2 lg:col-span-1 relative overflow-hidden">
+                <div class="absolute -right-20 -bottom-20 w-56 h-56 rounded-full border border-cream/10" aria-hidden="true"></div>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="flex items-baseline justify-between mb-1">
+                        <h3 class="text-2xl font-serif">Beloved Duo</h3>
+                        <span class="text-[9px] font-bold tracking-[0.2em] text-cream/30">05</span>
+                    </div>
+                    <p class="text-[9px] uppercase tracking-widest text-cream/60 mb-6">Two Storytellers</p>
+                    <div class="mb-5 flex items-baseline gap-2">
+                        <span class="text-3xl font-light">$3,588</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-cream/50">up to 12 hrs</span>
+                    </div>
+                    <div class="mb-5 flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-cream/15 text-[9px] font-bold uppercase rounded text-cream">2 Photographers</span>
+                    </div>
+                    <p class="text-xs text-cream/70 italic mb-6 leading-relaxed">Everything in Beloved, with a second photographer so no glance goes unseen.</p>
+                    <button type="button" class="pkg-toggle mt-auto flex items-center justify-between w-full pt-5 border-t border-cream/15 text-[10px] font-bold uppercase tracking-widest text-cream" aria-expanded="false">
+                        <span>What's Included</span>
+                        <span class="pkg-toggle-icon text-base leading-none" aria-hidden="true">+</span>
+                    </button>
+                    <div class="pkg-body"><div>
+                        <ul class="space-y-2 pt-5 text-xs text-cream/80">
+                            <li class="flex gap-3 font-semibold text-cream"><span>✦</span> 2 photographers</li>
+                            <li class="flex gap-3"><span class="text-cream/50">✦</span> Unlimited edited photographs</li>
+                            <li class="flex gap-3"><span class="text-cream/50">✦</span> Online photo gallery</li>
+                            <li class="flex gap-3"><span class="text-cream/50">✦</span> Itinerary planning</li>
+                            <li class="flex gap-3"><span class="text-cream/50">✦</span> 20 &times; 4R photo album</li>
+                            <li class="flex gap-3"><span class="text-cream/50">✦</span> 2 &times; magnetic polaroid</li>
+                            <li class="flex gap-3"><span class="text-cream/50">✦</span> 20 &times; Instax album</li>
+                            <li class="flex gap-3"><span class="text-cream/50">✦</span> Can be split into 2 days</li>
+                            <li class="flex gap-3"><span class="text-cream/50">✦</span> 10 &times; next-day sneak preview</li>
+                        </ul>
+                    </div></div>
                 </div>
-                <div class="mb-4 flex flex-wrap gap-2">
-                    <span class="px-2 py-1 bg-stone-100 text-[9px] font-bold uppercase rounded text-stone-600">2 Photographers</span>
-                    <span class="px-2 py-1 bg-[#9a8471]/10 text-[9px] font-bold uppercase rounded text-[#9a8471]">Content Creator Included</span>
-                    <span class="px-2 py-1 bg-stone-100 text-[9px] font-bold uppercase rounded text-stone-600">10 Photos Next-Day Edits</span>
+            </article>
+        </div>
+
+        <!-- Comparison View -->
+        <div id="compare-view" class="hidden mb-16">
+            <div class="bg-white rounded-[2rem] border border-stone-200 p-2 sm:p-4 overflow-x-auto">
+                <table class="cmp-table w-full min-w-[46rem] text-left border-collapse">
+                    <caption class="sr-only">Comparison of Natsuku wedding photography packages</caption>
+                    <thead>
+                        <tr class="text-[9px] font-bold uppercase tracking-widest">
+                            <th scope="col" class="p-4 text-stone-400 font-bold">Inclusion</th>
+                            <th scope="col" class="p-4 text-center">Cherish</th>
+                            <th scope="col" class="p-4 text-center">Devotion</th>
+                            <th scope="col" class="p-4 text-center cmp-col-featured text-sage">Adore</th>
+                            <th scope="col" class="p-4 text-center">Beloved</th>
+                            <th scope="col" class="p-4 text-center">Beloved Duo</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-xs text-stone-600">
+                        <tr>
+                            <th scope="row" class="p-4 font-semibold text-ink text-left">Coverage</th>
+                            <td class="p-4 text-center">Up to 3 hrs</td>
+                            <td class="p-4 text-center">Up to 6 hrs</td>
+                            <td class="p-4 text-center cmp-col-featured">Up to 9 hrs</td>
+                            <td class="p-4 text-center">Up to 12 hrs</td>
+                            <td class="p-4 text-center">Up to 12 hrs</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4 font-semibold text-ink text-left">Photographers</th>
+                            <td class="p-4 text-center">1</td>
+                            <td class="p-4 text-center">1</td>
+                            <td class="p-4 text-center cmp-col-featured">1</td>
+                            <td class="p-4 text-center">1</td>
+                            <td class="p-4 text-center font-bold text-sage">2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4 font-semibold text-ink text-left">Unlimited edited photographs</th>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold cmp-col-featured">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4 font-semibold text-ink text-left">Online photo gallery</th>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold cmp-col-featured">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4 font-semibold text-ink text-left">Itinerary planning</th>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold cmp-col-featured">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4 font-semibold text-ink text-left">20 &times; 4R photo album</th>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold cmp-col-featured">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4 font-semibold text-ink text-left">2 &times; magnetic polaroid</th>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold cmp-col-featured">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4 font-semibold text-ink text-left">20 &times; Instax album</th>
+                            <td class="p-4 text-center text-stone-300">—</td>
+                            <td class="p-4 text-center text-stone-300">—</td>
+                            <td class="p-4 text-center text-stone-300 cmp-col-featured">—</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4 font-semibold text-ink text-left">Can be split into 2 days</th>
+                            <td class="p-4 text-center text-stone-300">—</td>
+                            <td class="p-4 text-center text-stone-300">—</td>
+                            <td class="p-4 text-center text-stone-300 cmp-col-featured">—</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4 font-semibold text-ink text-left">10 &times; next-day sneak preview</th>
+                            <td class="p-4 text-center text-stone-300">—</td>
+                            <td class="p-4 text-center text-stone-300">—</td>
+                            <td class="p-4 text-center text-stone-300 cmp-col-featured">—</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                            <td class="p-4 text-center text-gold">✦</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4 font-serif text-base text-ink text-left">Investment</th>
+                            <td class="p-4 text-center font-light text-base">$828</td>
+                            <td class="p-4 text-center font-light text-base">$1,588</td>
+                            <td class="p-4 text-center font-light text-base cmp-col-featured text-sage">$1,788</td>
+                            <td class="p-4 text-center font-light text-base">$2,388</td>
+                            <td class="p-4 text-center font-light text-base">$3,588</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-[10px] uppercase tracking-widest text-stone-400 mt-4 text-center">Scroll the table sideways to see every package</p>
+        </div>
+
+        <!-- Add-ons -->
+        <div class="reveal mb-16">
+            <h2 class="text-xs uppercase tracking-[0.3em] text-stone-400 font-bold mb-8">Add to Any Package</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-8 rounded-[2rem] border border-stone-200 flex flex-col">
+                    <div class="flex items-start justify-between gap-4 mb-4">
+                        <h3 class="text-xl font-serif">Additional Hours</h3>
+                        <span class="text-2xl font-light whitespace-nowrap">$250<span class="text-xs text-stone-400 font-bold uppercase tracking-widest">/hr</span></span>
+                    </div>
+                    <p class="text-xs text-stone-500 italic leading-relaxed mb-6">Running long? Extend any package hour by hour — no need to jump a whole tier.</p>
+                    <div class="mt-auto flex flex-wrap gap-2 text-[9px] font-bold uppercase tracking-widest">
+                        <span class="px-2 py-1 bg-sage-mist rounded text-sage">+1 hr &middot; $250</span>
+                        <span class="px-2 py-1 bg-sage-mist rounded text-sage">+2 hrs &middot; $500</span>
+                        <span class="px-2 py-1 bg-sage-mist rounded text-sage">+3 hrs &middot; $750</span>
+                    </div>
                 </div>
-                <p class="text-xs text-stone-500 italic mb-8 leading-relaxed">Full coverage plus a dedicated social media team for your day.</p>
-                <div class="mt-auto pt-6 border-t border-stone-50 text-[10px] font-bold uppercase text-stone-400">Up to 12 Hours Coverage</div>
+                <div class="bg-white p-8 rounded-[2rem] border border-stone-200 flex flex-col">
+                    <div class="flex items-start justify-between gap-4 mb-4">
+                        <h3 class="text-xl font-serif">Pre-Wedding Shoot</h3>
+                        <span class="text-2xl font-light whitespace-nowrap">$500</span>
+                    </div>
+                    <p class="text-xs text-stone-500 italic leading-relaxed mb-6">A relaxed session before the day itself — a rehearsal for being photographed together.</p>
+                    <div class="mt-auto flex flex-wrap gap-2 text-[9px] font-bold uppercase tracking-widest">
+                        <span class="px-2 py-1 bg-sage-mist rounded text-sage">1.5 Hours</span>
+                        <span class="px-2 py-1 bg-sage-mist rounded text-sage">1 Location</span>
+                        <span class="px-2 py-1 bg-sage-mist rounded text-sage">1 Photographer</span>
+                        <span class="px-2 py-1 bg-sage-mist rounded text-sage">Unlimited Edits</span>
+                        <span class="px-2 py-1 bg-sage-mist rounded text-sage">Online Gallery</span>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Memory Capsule Standalone Section -->
-        <div class="bg-stone-900 text-white p-10 md:p-16 rounded-[3rem] shadow-2xl relative overflow-hidden">
+        <div class="reveal bg-sage-deep text-cream p-10 md:p-16 rounded-[3rem] shadow-2xl relative overflow-hidden">
+            <div class="absolute -left-24 -top-24 w-72 h-72 rounded-full border border-cream/10" aria-hidden="true"></div>
             <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
-                    <h4 class="text-xs font-bold uppercase tracking-[0.3em] natsuku-gold mb-4">Stationary Setup</h4>
-                    <h3 class="text-4xl font-serif italic mb-6">Memory Capsule</h3>
-                    <p class="text-stone-400 text-sm leading-relaxed mb-8">
-                        Fancy a professional photobooth experience instead of a roaming event photographer? 
+                    <h3 class="text-xs font-bold uppercase tracking-[0.3em] text-cream/60 mb-4">Stationary Setup</h3>
+                    <h2 class="text-4xl font-serif italic mb-6">Memory Capsule</h2>
+                    <p class="text-cream/70 text-sm leading-relaxed mb-8">
+                        Fancy a professional photobooth experience instead of a roaming event photographer?
                         Our Memory Capsule provides high-quality, instant keepsakes for your guests.
                     </p>
-                    <div class="p-4 border-l-2 border-[#9a8471] bg-white/5 text-[10px] font-bold uppercase tracking-widest text-stone-300">
+                    <div class="p-4 border-l-2 border-gold bg-white/5 text-[10px] font-bold uppercase tracking-widest text-cream/70">
                         * Note: This is a standalone specialty and cannot be included as an add-on to other packages.
                     </div>
                 </div>
                 <div class="space-y-4">
-                    <div class="flex justify-between items-center p-6 bg-white/5 border border-white/10 rounded-2xl">
+                    <div class="flex justify-between items-center p-6 bg-white/5 border border-white/10 rounded-2xl transition-colors hover:bg-white/10">
                         <span class="font-serif italic text-lg">2 Hours</span>
-                        <div class="text-right">
-                            <div class="text-xl font-light">$488</div>
-                        </div>
+                        <div class="text-xl font-light">$488</div>
                     </div>
-                    <div class="flex justify-between items-center p-6 bg-white/5 border border-white/10 rounded-2xl">
+                    <div class="flex justify-between items-center p-6 bg-white/5 border border-white/10 rounded-2xl transition-colors hover:bg-white/10">
                         <span class="font-serif italic text-lg">3 Hours</span>
-                        <div class="text-right">
-                            <div class="text-xl font-light">$588</div>
-                        </div>
+                        <div class="text-xl font-light">$588</div>
                     </div>
-                    <div class="flex justify-between items-center p-6 bg-white/5 border border-white/10 rounded-2xl">
+                    <div class="flex justify-between items-center p-6 bg-white/5 border border-white/10 rounded-2xl transition-colors hover:bg-white/10">
                         <span class="font-serif italic text-lg">4 Hours</span>
-                        <div class="text-right">
-                            <div class="text-xl font-light">$728</div>
-                        </div>
+                        <div class="text-xl font-light">$728</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- TAB 2: TIMELINE -->
-    <div id="timeline" class="tab-content max-w-4xl mx-auto px-6 pb-20">
-        <div class="text-center mb-16">
-            <h3 class="text-xs uppercase tracking-[0.3em] text-stone-400 font-bold mb-4">The Process</h3>
-            <h2 class="text-3xl font-serif italic">From Hello to High-Res</h2>
+    <!-- ============ TAB 2: BUILD YOURS ============ -->
+    <section id="builder" role="tabpanel" aria-labelledby="btn-builder" class="tab-panel max-w-5xl mx-auto px-6 pt-10 pb-20">
+        <div class="text-center mb-14">
+            <h2 class="text-xs uppercase tracking-[0.3em] text-stone-400 font-bold mb-4">Your Day, Your Numbers</h2>
+            <p class="text-3xl font-serif italic">Build your estimate</p>
         </div>
 
-        <div class="space-y-12 relative timeline-container">
-            <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-stone-200 -translate-x-1/2"></div>
-            
+        <div class="grid lg:grid-cols-[1fr_20rem] gap-8 items-start">
+
+            <!-- Controls -->
+            <div class="space-y-6">
+                <!-- Hours -->
+                <div class="bg-white p-8 rounded-[2rem] border border-stone-200">
+                    <div class="flex items-baseline justify-between mb-8">
+                        <label for="build-hours" class="text-[10px] font-bold uppercase tracking-[0.25em] text-stone-400">Hours of coverage</label>
+                        <span id="build-hours-value" class="font-serif text-3xl">9</span>
+                    </div>
+                    <input id="build-hours" class="hour-range" type="range" min="1" max="16" step="1" value="9">
+                    <div class="flex justify-between text-[9px] font-bold uppercase tracking-widest text-stone-300 mt-4">
+                        <span>1</span><span>4</span><span>8</span><span>12</span><span>16</span>
+                    </div>
+                    <p id="build-hours-note" class="text-[11px] italic text-stone-400 mt-6 font-serif">Lands you in the Adore package.</p>
+                </div>
+
+                <!-- Add-ons -->
+                <div class="bg-white p-8 rounded-[2rem] border border-stone-200 space-y-4">
+                    <h3 class="text-[10px] font-bold uppercase tracking-[0.25em] text-stone-400 mb-6">Add-ons</h3>
+
+                    <button type="button" id="toggle-duo" class="addon w-full flex items-center gap-5 text-left p-5 rounded-2xl border border-stone-200" aria-pressed="false">
+                        <span class="switch" aria-hidden="true"><span></span></span>
+                        <span class="flex-1">
+                            <span class="block text-sm font-semibold">Second photographer</span>
+                            <span id="duo-note" class="block text-[10px] uppercase tracking-widest text-stone-400 mt-1">Beloved Duo &middot; available from 10 hours of coverage</span>
+                        </span>
+                    </button>
+
+                    <button type="button" id="toggle-prewed" class="addon w-full flex items-center gap-5 text-left p-5 rounded-2xl border border-stone-200" aria-pressed="false">
+                        <span class="switch" aria-hidden="true"><span></span></span>
+                        <span class="flex-1">
+                            <span class="block text-sm font-semibold">Pre-wedding shoot</span>
+                            <span class="block text-[10px] uppercase tracking-widest text-stone-400 mt-1">+$500 &middot; 1.5 hrs, 1 location</span>
+                        </span>
+                    </button>
+                </div>
+
+                <!-- What's included -->
+                <div class="bg-white p-8 rounded-[2rem] border border-stone-200">
+                    <h3 class="text-[10px] font-bold uppercase tracking-[0.25em] text-stone-400 mb-6">What you'll receive</h3>
+                    <ul id="build-inclusions" class="grid sm:grid-cols-2 gap-y-3 gap-x-6 text-xs text-stone-600"></ul>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <aside class="bg-sage text-cream p-8 rounded-[2rem] lg:sticky lg:top-24 relative overflow-hidden">
+                <div class="absolute -right-24 -top-24 w-64 h-64 rounded-full border border-cream/10" aria-hidden="true"></div>
+                <div class="relative z-10">
+                    <h3 class="text-[10px] font-bold uppercase tracking-[0.3em] text-cream/60 mb-6">Your Estimate</h3>
+                    <div id="build-package" class="font-serif text-3xl mb-1">Adore</div>
+                    <div id="build-package-sub" class="text-[10px] font-bold uppercase tracking-widest text-cream/50 mb-8">Up to 9 hours &middot; 1 photographer</div>
+
+                    <ul id="build-lines" class="space-y-3 text-xs text-cream/80 mb-6 pb-6 border-b border-cream/15"></ul>
+
+                    <div class="flex items-baseline justify-between mb-2">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-cream/60">Total</span>
+                        <span id="build-total" class="font-serif text-4xl" aria-live="polite">$1,788</span>
+                    </div>
+                    <div class="flex items-baseline justify-between text-[10px] font-bold uppercase tracking-widest text-cream/50 mb-8">
+                        <span>30% deposit to reserve</span>
+                        <span id="build-deposit">$536</span>
+                    </div>
+
+                    <button type="button" id="copy-summary"
+                            class="w-full text-[10px] font-bold uppercase tracking-[0.2em] bg-cream text-sage px-5 py-4 rounded-full hover:bg-white transition-colors mb-3">
+                        Copy this estimate
+                    </button>
+                    <a href="https://www.instagram.com/natsuku.co?igsh=M3Y5cXU1Znl2cmY4" target="_blank" rel="noopener"
+                       class="block text-center w-full text-[10px] font-bold uppercase tracking-[0.2em] border border-cream/30 px-5 py-4 rounded-full hover:bg-cream/10 transition-colors">
+                        Send it to us on Instagram
+                    </a>
+                    <p class="text-[9px] uppercase tracking-widest text-cream/40 mt-6 leading-relaxed">
+                        Indicative estimate in SGD. Final quotation confirmed over a chat.
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- ============ TAB 3: TIMELINE ============ -->
+    <section id="timeline" role="tabpanel" aria-labelledby="btn-timeline" class="tab-panel max-w-4xl mx-auto px-6 pt-10 pb-20">
+        <div class="text-center mb-16">
+            <h2 class="text-xs uppercase tracking-[0.3em] text-stone-400 font-bold mb-4">The Process</h2>
+            <p class="text-3xl font-serif italic">From Hello to High-Res</p>
+        </div>
+
+        <div class="space-y-12 relative">
+            <div class="timeline-line absolute left-6 md:left-1/2 top-0 bottom-0 w-px -translate-x-1/2" aria-hidden="true"></div>
+
             <!-- Step 1 -->
-            <div class="relative flex items-start gap-8 md:justify-between">
+            <div class="reveal relative flex items-start gap-8 md:justify-between">
                 <div class="hidden md:block w-1/2 text-right pr-16 pt-2">
                     <span class="text-stone-300 text-[10px] font-bold uppercase tracking-widest">Stage 01</span>
                 </div>
-                <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#9a8471] border-4 border-[#faf9f6] flex items-center justify-center text-white text-xs font-bold z-20">1</div>
+                <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-sage border-4 border-paper flex items-center justify-center text-cream text-xs font-bold z-20">1</div>
                 <div class="w-full md:w-1/2 pl-12 md:pl-16">
-                    <h4 class="font-bold text-sm uppercase tracking-tighter mb-2 natsuku-gold">Direct Message</h4>
+                    <h3 class="font-bold text-sm uppercase tracking-tight mb-2 text-sage">Direct Message</h3>
                     <p class="text-xs text-stone-500 leading-relaxed">Reach out on Instagram with your date, time, and preferred number of hours.</p>
                 </div>
             </div>
 
             <!-- Step 2 -->
-            <div class="relative flex items-start gap-8 md:justify-between">
+            <div class="reveal relative flex items-start gap-8 md:justify-between">
                 <div class="w-full md:w-1/2 pl-12 md:pl-0 md:pr-16 md:text-right order-2 md:order-1">
-                    <h4 class="font-bold text-sm uppercase tracking-tighter mb-2 natsuku-gold">Deposit</h4>
+                    <h3 class="font-bold text-sm uppercase tracking-tight mb-2 text-sage">Deposit</h3>
                     <p class="text-xs text-stone-500 leading-relaxed">A 30% non-refundable deposit is required to secure your specific date on our calendar.</p>
                 </div>
-                <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#9a8471] border-4 border-[#faf9f6] flex items-center justify-center text-white text-xs font-bold z-20 order-1 md:order-2">2</div>
+                <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-sage border-4 border-paper flex items-center justify-center text-cream text-xs font-bold z-20 order-1 md:order-2">2</div>
                 <div class="hidden md:block w-1/2 pl-16 pt-2 order-3">
                     <span class="text-stone-300 text-[10px] font-bold uppercase tracking-widest">Stage 02</span>
                 </div>
             </div>
 
             <!-- Step 3 -->
-            <div class="relative flex items-start gap-8 md:justify-between">
+            <div class="reveal relative flex items-start gap-8 md:justify-between">
                 <div class="hidden md:block w-1/2 text-right pr-16 pt-2">
                     <span class="text-stone-300 text-[10px] font-bold uppercase tracking-widest">Stage 03</span>
                 </div>
-                <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#9a8471] border-4 border-[#faf9f6] flex items-center justify-center text-white text-xs font-bold z-20">3</div>
+                <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-sage border-4 border-paper flex items-center justify-center text-cream text-xs font-bold z-20">3</div>
                 <div class="w-full md:w-1/2 pl-12 md:pl-16">
-                    <h4 class="font-bold text-sm uppercase tracking-tighter mb-2 natsuku-gold">Consultation</h4>
+                    <h3 class="font-bold text-sm uppercase tracking-tight mb-2 text-sage">Consultation</h3>
                     <p class="text-xs text-stone-500 leading-relaxed">Complimentary itinerary consultation via Zoom, call, or face-to-face to align on your vision.</p>
                 </div>
             </div>
 
             <!-- Step 4 -->
-            <div class="relative flex items-start gap-8 md:justify-between">
+            <div class="reveal relative flex items-start gap-8 md:justify-between">
                 <div class="w-full md:w-1/2 pl-12 md:pl-0 md:pr-16 md:text-right order-2 md:order-1">
-                    <h4 class="font-bold text-sm uppercase tracking-tighter mb-2 natsuku-gold">The Wedding Day</h4>
+                    <h3 class="font-bold text-sm uppercase tracking-tight mb-2 text-sage">The Wedding Day</h3>
                     <p class="text-xs text-stone-500 leading-relaxed">Fly-on-the-wall coverage focused on authenticity and conversations rather than traditional poses.</p>
                 </div>
-                <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#9a8471] border-4 border-[#faf9f6] flex items-center justify-center text-white text-xs font-bold z-20 order-1 md:order-2">4</div>
+                <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-sage border-4 border-paper flex items-center justify-center text-cream text-xs font-bold z-20 order-1 md:order-2">4</div>
                 <div class="hidden md:block w-1/2 pl-16 pt-2 order-3">
                     <span class="text-stone-300 text-[10px] font-bold uppercase tracking-widest">Stage 04</span>
                 </div>
             </div>
 
             <!-- Step 5 -->
-            <div class="relative flex items-start gap-8 md:justify-between">
+            <div class="reveal relative flex items-start gap-8 md:justify-between">
                 <div class="hidden md:block w-1/2 text-right pr-16 pt-2">
                     <span class="text-stone-300 text-[10px] font-bold uppercase tracking-widest">Stage 05</span>
                 </div>
-                <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#9a8471] border-4 border-[#faf9f6] flex items-center justify-center text-white text-xs font-bold z-20">5</div>
+                <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-sage border-4 border-paper flex items-center justify-center text-cream text-xs font-bold z-20">5</div>
                 <div class="w-full md:w-1/2 pl-12 md:pl-16">
-                    <h4 class="font-bold text-sm uppercase tracking-tighter mb-2 natsuku-gold">Post-Production</h4>
+                    <h3 class="font-bold text-sm uppercase tracking-tight mb-2 text-sage">Post-Production</h3>
                     <p class="text-xs text-stone-500 leading-relaxed">Detailed editing and curation with a standard 4 to 6 weeks lead time for delivery.</p>
                 </div>
             </div>
 
             <!-- Step 6 -->
-            <div class="relative flex items-start gap-8 md:justify-between">
+            <div class="reveal relative flex items-start gap-8 md:justify-between">
                 <div class="w-full md:w-1/2 pl-12 md:pl-0 md:pr-16 md:text-right order-2 md:order-1">
-                    <h4 class="font-bold text-sm uppercase tracking-tighter mb-2 natsuku-gold">Delivery</h4>
+                    <h3 class="font-bold text-sm uppercase tracking-tight mb-2 text-sage">Delivery</h3>
                     <p class="text-xs text-stone-500 leading-relaxed">Receive your private online gallery link via email to relive your moments forever.</p>
                 </div>
-                <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#9a8471] border-4 border-[#faf9f6] flex items-center justify-center text-white text-xs font-bold z-20 order-1 md:order-2">6</div>
+                <div class="absolute left-6 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-sage border-4 border-paper flex items-center justify-center text-cream text-xs font-bold z-20 order-1 md:order-2">6</div>
                 <div class="hidden md:block w-1/2 pl-16 pt-2 order-3">
                     <span class="text-stone-300 text-[10px] font-bold uppercase tracking-widest">Stage 06</span>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    </main>
 
     <!-- Footer -->
     <footer class="py-20 bg-white border-t border-stone-100 text-center px-6">
-        <h4 class="text-2xl font-serif italic mb-6">Fondly Remembered.</h4>
+        <h2 class="text-2xl font-serif italic mb-6">Fondly Remembered.</h2>
         <div class="flex flex-wrap justify-center gap-6 mb-8 text-[10px] font-bold uppercase tracking-widest">
-            <a href="https://skybite.pic-time.com/client" target="_blank" class="natsuku-gold hover:opacity-70 transition-opacity underline underline-offset-4">View Full Portfolio</a>
+            <a href="https://skybite.pic-time.com/client" target="_blank" rel="noopener" class="text-sage hover:opacity-70 transition-opacity underline underline-offset-4">View Full Portfolio</a>
             <span class="text-stone-200 hidden md:inline">|</span>
-            <a href="https://www.instagram.com/natsuku.co?igsh=M3Y5cXU1Znl2cmY4" target="_blank" class="natsuku-gold hover:opacity-70 transition-opacity">Instagram</a>
+            <a href="https://www.instagram.com/natsuku.co?igsh=M3Y5cXU1Znl2cmY4" target="_blank" rel="noopener" class="text-sage hover:opacity-70 transition-opacity">Instagram</a>
             <span class="text-stone-200 hidden md:inline">|</span>
-            <a href="https://maps.app.goo.gl/2jhCvsvyrYShcupk6?g_st=ac" target="_blank" class="natsuku-gold hover:opacity-70 transition-opacity">Reviews</a>
+            <a href="https://maps.app.goo.gl/2jhCvsvyrYShcupk6?g_st=ac" target="_blank" rel="noopener" class="text-sage hover:opacity-70 transition-opacity">Reviews</a>
         </div>
-        <p class="text-[10px] text-stone-400 max-w-xs mx-auto leading-relaxed mb-8 uppercase tracking-widest">
-            30% non-refundable deposit to secure date. Postponements allowed indefinitely subject to availability.
+        <p class="text-[10px] text-stone-400 max-w-sm mx-auto leading-relaxed mb-8 uppercase tracking-widest">
+            All rates in SGD. Additional hours at $250/hr. 30% non-refundable deposit to secure date.
+            Postponements allowed indefinitely subject to availability.
         </p>
         <div class="text-[9px] font-bold uppercase tracking-[0.4em] text-stone-300">
             Natsuku Photography — Hakim
@@ -304,18 +776,301 @@
     </footer>
 
     <script>
-        function switchTab(tabId) {
-            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-            document.getElementById(tabId).classList.add('active');
+    (function () {
+        'use strict';
 
-            document.querySelectorAll('header button').forEach(b => b.classList.remove('tab-active', 'text-[#9a8471]'));
-            document.querySelectorAll('header button').forEach(b => b.classList.add('text-stone-400'));
-            
-            const activeBtn = document.getElementById('btn-' + tabId);
-            activeBtn.classList.add('tab-active', 'text-[#9a8471]');
-            activeBtn.classList.remove('text-stone-400');
+        /* ---------------- Rate data ---------------- */
+        var EXTRA_HOUR = 250;
+        var PREWED = 500;
+        var DEPOSIT_RATE = 0.30;
+
+        var BASE_INCLUSIONS = [
+            'Unlimited edited photographs',
+            'Online photo gallery',
+            'Itinerary planning',
+            '20 × 4R photo album',
+            '2 × magnetic polaroid'
+        ];
+        var BELOVED_EXTRAS = [
+            '20 × Instax album',
+            'Can be split into 2 days',
+            '10 × next-day sneak preview'
+        ];
+
+        var TIERS = [
+            { id: 'cherish',  name: 'Cherish',  hours: 3,  price: 828,  extras: [] },
+            { id: 'devotion', name: 'Devotion', hours: 6,  price: 1588, extras: [] },
+            { id: 'adore',    name: 'Adore',    hours: 9,  price: 1788, extras: [] },
+            { id: 'beloved',  name: 'Beloved',  hours: 12, price: 2388, extras: BELOVED_EXTRAS }
+        ];
+        var DUO = { id: 'duo', name: 'Beloved Duo', hours: 12, price: 3588, extras: ['2 photographers'].concat(BELOVED_EXTRAS) };
+
+        function tierForHours(h) {
+            for (var i = 0; i < TIERS.length; i++) {
+                if (h <= TIERS[i].hours) return TIERS[i];
+            }
+            return TIERS[TIERS.length - 1];
+        }
+        function money(n) { return '$' + n.toLocaleString('en-SG'); }
+        function plural(n, word) { return n + ' ' + word + (n === 1 ? '' : 's'); }
+
+        /* ---------------- Tabs ---------------- */
+        var TABS = ['pricing', 'builder', 'timeline'];
+
+        function switchTab(id, focusPanel) {
+            if (TABS.indexOf(id) === -1) return;
+            TABS.forEach(function (t) {
+                var panel = document.getElementById(t);
+                var btn = document.getElementById('btn-' + t);
+                var on = (t === id);
+                panel.classList.toggle('is-active', on);
+                btn.classList.toggle('is-active', on);
+                btn.setAttribute('aria-selected', on ? 'true' : 'false');
+            });
+            if (history.replaceState) history.replaceState(null, '', '#' + id);
+            if (focusPanel) window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
+        TABS.forEach(function (t) {
+            document.getElementById('btn-' + t).addEventListener('click', function () { switchTab(t); });
+        });
+
+        // Arrow-key navigation across the tablist
+        document.querySelectorAll('[role="tab"]').forEach(function (btn, i, all) {
+            btn.addEventListener('keydown', function (e) {
+                var dir = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+                if (!dir) return;
+                e.preventDefault();
+                var next = all[(i + dir + all.length) % all.length];
+                next.focus();
+                next.click();
+            });
+        });
+
+        if (TABS.indexOf(location.hash.replace('#', '')) !== -1) {
+            switchTab(location.hash.replace('#', ''));
+        }
+
+        /* ---------------- Package cards ---------------- */
+        document.querySelectorAll('.pkg-toggle').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var card = btn.closest('.pkg-card');
+                var open = card.classList.toggle('is-open');
+                btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+                btn.querySelector('span').textContent = open ? "That's Everything" : "What's Included";
+            });
+        });
+
+        /* ---------------- Cards / Compare view ---------------- */
+        var cardsView = document.getElementById('cards-view');
+        var compareView = document.getElementById('compare-view');
+        var btnCards = document.getElementById('view-cards');
+        var btnCompare = document.getElementById('view-compare');
+        // Assigned wholesale: a lingering hover:text-sage would render the active pill's label invisible.
+        var VIEW_ON = 'px-4 py-2 rounded-full bg-sage text-cream transition-colors';
+        var VIEW_OFF = 'px-4 py-2 rounded-full text-stone-400 hover:text-sage transition-colors';
+
+        function setView(mode) {
+            var cards = (mode === 'cards');
+            cardsView.classList.toggle('hidden', !cards);
+            compareView.classList.toggle('hidden', cards);
+            btnCards.className = cards ? VIEW_ON : VIEW_OFF;
+            btnCompare.className = cards ? VIEW_OFF : VIEW_ON;
+            btnCards.setAttribute('aria-pressed', cards ? 'true' : 'false');
+            btnCompare.setAttribute('aria-pressed', cards ? 'false' : 'true');
+        }
+        btnCards.addEventListener('click', function () { setView('cards'); });
+        btnCompare.addEventListener('click', function () { setView('compare'); });
+
+        /* ---------------- Hour finder (Packages tab) ---------------- */
+        var finder = document.getElementById('finder-hours');
+        var finderName = document.getElementById('finder-name');
+        var finderPrice = document.getElementById('finder-price');
+        var finderHoursLabel = document.getElementById('finder-hours-label');
+
+        function paintRange(input, light) {
+            var pct = (input.value - input.min) / (input.max - input.min) * 100;
+            var filled = light ? '#f1e8d7' : '#4a544c';
+            var track = light ? 'rgba(241,232,215,.25)' : '#e4e8e2';
+            input.style.background = 'linear-gradient(to right, ' + filled + ' 0%, ' + filled + ' ' + pct +
+                                     '%, ' + track + ' ' + pct + '%, ' + track + ' 100%)';
+        }
+
+        function updateFinder() {
+            var h = parseInt(finder.value, 10);
+            var tier = tierForHours(h);
+            finderHoursLabel.textContent = plural(h, 'hour');
+            finderName.textContent = tier.name;
+            finderPrice.textContent = money(tier.price);
+            paintRange(finder, true);
+            document.querySelectorAll('#cards-view .pkg-card').forEach(function (card) {
+                card.classList.toggle('is-matched', card.getAttribute('data-pkg') === tier.id);
+            });
+        }
+        finder.addEventListener('input', updateFinder);
+
+        /* ---------------- Estimate builder ---------------- */
+        var hours = document.getElementById('build-hours');
+        var hoursValue = document.getElementById('build-hours-value');
+        var hoursNote = document.getElementById('build-hours-note');
+        var duoBtn = document.getElementById('toggle-duo');
+        var duoNote = document.getElementById('duo-note');
+        var prewedBtn = document.getElementById('toggle-prewed');
+        var pkgName = document.getElementById('build-package');
+        var pkgSub = document.getElementById('build-package-sub');
+        var linesEl = document.getElementById('build-lines');
+        var totalEl = document.getElementById('build-total');
+        var depositEl = document.getElementById('build-deposit');
+        var inclusionsEl = document.getElementById('build-inclusions');
+        var copyBtn = document.getElementById('copy-summary');
+
+        var state = { duo: false, prewed: false };
+        var shownTotal = 0;
+        var rafId = null;
+
+        function quote() {
+            var h = parseInt(hours.value, 10);
+            var tier = tierForHours(h);
+            var duoAvailable = (tier.id === 'beloved');
+            var useDuo = duoAvailable && state.duo;
+            var chosen = useDuo ? DUO : tier;
+            var extra = Math.max(0, h - chosen.hours);
+            var lines = [{ label: chosen.name + ' · up to ' + plural(chosen.hours, 'hour'), amount: chosen.price }];
+            if (extra > 0) lines.push({ label: 'Additional ' + plural(extra, 'hour') + ' · $250/hr', amount: extra * EXTRA_HOUR });
+            if (state.prewed) lines.push({ label: 'Pre-wedding shoot · 1.5 hrs', amount: PREWED });
+            var total = lines.reduce(function (sum, l) { return sum + l.amount; }, 0);
+            return { hours: h, tier: tier, chosen: chosen, duoAvailable: duoAvailable, useDuo: useDuo, extra: extra, lines: lines, total: total };
+        }
+
+        function animateTotal(target) {
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                shownTotal = target;
+                totalEl.textContent = money(target);
+                return;
+            }
+            var start = shownTotal, t0 = null, dur = 420;
+            if (rafId) cancelAnimationFrame(rafId);
+            function step(ts) {
+                if (t0 === null) t0 = ts;
+                var p = Math.min(1, (ts - t0) / dur);
+                var eased = 1 - Math.pow(1 - p, 3);
+                var val = Math.round(start + (target - start) * eased);
+                totalEl.textContent = money(val);
+                if (p < 1) { rafId = requestAnimationFrame(step); } else { shownTotal = target; }
+            }
+            rafId = requestAnimationFrame(step);
+        }
+
+        function updateBuilder() {
+            var q = quote();
+
+            hoursValue.textContent = q.hours;
+            paintRange(hours, false);
+
+            hoursNote.textContent = q.extra > 0
+                ? 'Beyond 12 hours — ' + plural(q.extra, 'additional hour') + ' added at $250/hr.'
+                : 'Lands you in the ' + q.tier.name + ' package.';
+
+            // Duo availability
+            duoBtn.disabled = !q.duoAvailable;
+            duoBtn.setAttribute('aria-pressed', q.useDuo ? 'true' : 'false');
+            duoNote.textContent = q.duoAvailable
+                ? 'Beloved Duo · ' + money(DUO.price) + ' in place of ' + money(TIERS[3].price)
+                : 'Beloved Duo · available from 10 hours of coverage';
+
+            prewedBtn.setAttribute('aria-pressed', state.prewed ? 'true' : 'false');
+
+            pkgName.textContent = q.chosen.name;
+            pkgSub.textContent = 'Up to ' + plural(q.chosen.hours, 'hour') + ' · ' + (q.useDuo ? '2 photographers' : '1 photographer');
+
+            linesEl.innerHTML = '';
+            q.lines.forEach(function (l) {
+                var li = document.createElement('li');
+                li.className = 'flex justify-between gap-4';
+                var name = document.createElement('span');
+                name.textContent = l.label;
+                var amt = document.createElement('span');
+                amt.className = 'whitespace-nowrap';
+                amt.textContent = money(l.amount);
+                li.appendChild(name);
+                li.appendChild(amt);
+                linesEl.appendChild(li);
+            });
+
+            animateTotal(q.total);
+            depositEl.textContent = money(Math.round(q.total * DEPOSIT_RATE));
+
+            inclusionsEl.innerHTML = '';
+            var items = (q.useDuo ? ['2 photographers'] : []).concat(BASE_INCLUSIONS, q.chosen.id === 'duo' ? BELOVED_EXTRAS : q.chosen.extras);
+            if (state.prewed) items.push('Pre-wedding shoot (1.5 hrs, 1 location)');
+            items.forEach(function (text) {
+                var li = document.createElement('li');
+                li.className = 'flex gap-3';
+                var mark = document.createElement('span');
+                mark.className = 'text-gold';
+                mark.textContent = '✦';
+                var label = document.createElement('span');
+                label.textContent = text;
+                li.appendChild(mark);
+                li.appendChild(label);
+                inclusionsEl.appendChild(li);
+            });
+        }
+
+        hours.addEventListener('input', updateBuilder);
+        duoBtn.addEventListener('click', function () { state.duo = !state.duo; updateBuilder(); });
+        prewedBtn.addEventListener('click', function () { state.prewed = !state.prewed; updateBuilder(); });
+
+        copyBtn.addEventListener('click', function () {
+            var q = quote();
+            var text = ['Natsuku — my estimate', '']
+                .concat(q.lines.map(function (l) { return '• ' + l.label + ' — ' + money(l.amount); }))
+                .concat(['', 'Total: ' + money(q.total), 'Deposit (30%): ' + money(Math.round(q.total * DEPOSIT_RATE))])
+                .join('\n');
+            var done = function (ok) {
+                copyBtn.textContent = ok ? 'Copied ✓' : 'Press Ctrl+C to copy';
+                setTimeout(function () { copyBtn.textContent = 'Copy this estimate'; }, 2200);
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+            } else {
+                done(false);
+            }
+        });
+
+        // "Build this estimate" hand-off from the Packages tab
+        document.querySelectorAll('[data-goto-builder]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                hours.value = finder.value;
+                state.duo = false;
+                updateBuilder();
+                switchTab('builder', true);
+            });
+        });
+
+        /* ---------------- Scroll reveal ---------------- */
+        var revealables = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-in');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+            revealables.forEach(function (el, i) {
+                el.style.transitionDelay = (Math.min(i, 5) * 60) + 'ms';
+                io.observe(el);
+            });
+        } else {
+            revealables.forEach(function (el) { el.classList.add('is-in'); });
+        }
+
+        /* ---------------- Init ---------------- */
+        updateFinder();
+        updateBuilder();
+    })();
     </script>
 </body>
 </html>
